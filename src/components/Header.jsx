@@ -49,7 +49,7 @@ export function Header() {
   return (
     <header>
       <nav>
-        <Container className="relative z-50 flex justify-between py-8">
+        <Container className="relative z-50 flex justify-between py-8 bg-neutral-900">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
               <Logo className="h-10 w-auto" />
@@ -63,7 +63,7 @@ export function Header() {
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-100 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
