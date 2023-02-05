@@ -19,7 +19,7 @@ const reviews = [
     rating: 5,
   },
   {
-    title: 'You need this app.',
+    title: 'You need this marketplace.',
     body: 'I didn’t understand the stock market at all before Pocket. I still don’t, but at least I’m rich now.',
     author: 'CluelessButRich',
     rating: 5,
@@ -31,7 +31,7 @@ const reviews = [
     rating: 5,
   },
   {
-    title: 'Screw financial advisors.',
+    title: 'Influencers are a thing of the past .',
     body: 'I barely made any money investing in mutual funds. With Pocket, I’m doubling my net-worth every single month.',
     author: 'JordanBelfort1962',
     rating: 5,
@@ -114,7 +114,7 @@ function StarRating({ rating }) {
           key={index}
           className={clsx(
             'h-5 w-5',
-            rating > index ? 'fill-cyan-500' : 'fill-gray-300'
+            rating > index ? 'fill-aanred' : 'fill-gray-300'
           )}
         />
       ))}
@@ -139,7 +139,7 @@ function Review({ title, body, author, rating, className, ...props }) {
       style={{ animationDelay }}
       {...props}
     >
-      <blockquote className="text-gray-900">
+      <blockquote className="text-gray-700">
         <StarRating rating={rating} />
         <p className="mt-4 text-lg font-semibold leading-6 before:content-['“'] after:content-['”']">
           {title}
@@ -244,8 +244,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 " />
     </div>
   )
 }
@@ -260,12 +260,12 @@ export function Reviews() {
       <Container>
         <h2
           id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
+          className="text-6xl font-bold tracking-tight text-white sm:text-center pt-20"
         >
-          Everyone is changing their life with Pocket.
+          Everyone is <span className="text-aanred">raving</span> about AAN.
         </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+        <p className="mt-7 text-lg text-gray-300 sm:text-center">
+          See why brands are in love with are ambassador marketplace
         </p>
         <ReviewGrid />
       </Container>

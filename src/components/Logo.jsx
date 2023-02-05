@@ -12,6 +12,6 @@ export function Logomark(props) {
 
 export function Logo(props) {
   return (
-    <img src='logo.png' alt="logo" className="w-28" />
+    <img src='logo.png' alt="logo" className="w-24" />
   )
 }

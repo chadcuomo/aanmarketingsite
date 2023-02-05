@@ -8,9 +8,9 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Small Business',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: { Monthly: '$10', Annually: '$100' },
     description:
       'You’re new to investing but want to do it right. Get started for free.',
     button: {
@@ -18,17 +18,17 @@ const plans = [
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Feature 1',
+      'Feature 2',
+      'Feature 3',
+      'Feature 4',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
+    name: 'Big Brand',
     featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
+    price: { Monthly: '$250', Annually: '$2500' },
     description:
       'You’ve been investing for a while. Invest more and grow your wealth faster.',
     button: {
@@ -36,33 +36,33 @@ const plans = [
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
+      'Feature 1',
+      'Feature 2',
+      'Feature 3',
+      'Feature 4',
+      'Feature 5',
     ],
     logomarkClassName: 'fill-gray-500',
   },
   {
-    name: 'VIP',
+    name: 'Managed Service',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: 'Contact for pricing', Annually: 'Contact for pricing' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      `We get it, you're busy, so let us do all the work and handle your Ambassador program for you `,
     button: {
       label: 'Subscribe',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Feature 1',
+      'Feature 2',
+      'Feature 3',
+      'Feature 4',
+      'Feature 5',
+      'Feature 6',
     ],
-    logomarkClassName: 'fill-cyan-500',
+    logomarkClassName: 'fill-white',
   },
 ]
 
@@ -101,13 +101,13 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
-        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white'
+        featured ? 'order-first bg-aanred lg:order-none' : 'bg-white'
       )}
     >
       <h3
         className={clsx(
           'flex items-center text-sm font-semibold',
-          featured ? 'text-white' : 'text-gray-900'
+          featured ? 'text-white' : 'text-gray-700'
         )}
       >
         <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
@@ -116,7 +116,7 @@ function Plan({
       <p
         className={clsx(
           'relative mt-5 flex text-3xl tracking-tight',
-          featured ? 'text-white' : 'text-gray-900'
+          featured ? 'text-white' : 'text-gray-700'
         )}
       >
         {price.Monthly === price.Annually ? (
@@ -149,7 +149,7 @@ function Plan({
       <p
         className={clsx(
           'mt-3 text-sm',
-          featured ? 'text-gray-300' : 'text-gray-700'
+          featured ? 'text-white' : 'text-gray-700'
         )}
       >
         {description}
@@ -160,7 +160,7 @@ function Plan({
           className={clsx(
             '-my-2 divide-y text-sm',
             featured
-              ? 'divide-gray-800 text-gray-300'
+              ? 'divide-white text-white'
               : 'divide-gray-200 text-gray-700'
           )}
         >
@@ -169,7 +169,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500'
+                  featured ? 'text-white' : 'text-aanred'
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -179,7 +179,7 @@ function Plan({
       </div>
       <Button
         href={button.href}
-        color={featured ? 'cyan' : 'gray'}
+        color={featured ? 'white' : 'gray'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
@@ -196,19 +196,19 @@ export function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-neutral-900 py-20 sm:py-32"
+      className="bg-neutral-900 py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-4xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-6xl font-bold tracking-tight text-white"
           >
-            Flat pricing, no management fees.
+            Pick a plan that’s <span className="text-aanred">right</span> for you.
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+          <p className="mt-10 text-lg text-gray-300">
+            Whether you’re small businees trying to find your audience or a large brand trying
+            to increase your reach and engagement, we’ve got a plan for you.
           </p>
         </div>
 
@@ -224,7 +224,7 @@ export function Pricing() {
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-700 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
+                    'cursor-pointer border border-gray-300 py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm text-gray-300 outline-2 outline-offset-2 transition-colors hover:border-gray-400',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg'
@@ -237,7 +237,7 @@ export function Pricing() {
             <div
               aria-hidden="true"
               className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
+                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-aanred transition-all duration-300',
                 activePeriod === 'Monthly'
                   ? '[clip-path:inset(0_50%_0_0)]'
                   : '[clip-path:inset(0_0_0_calc(50%-1px))]'

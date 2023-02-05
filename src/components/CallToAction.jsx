@@ -1,6 +1,7 @@
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import { Button } from './Button'
 
 export function CallToAction() {
   return (
@@ -12,17 +13,20 @@ export function CallToAction() {
         <CircleBackground color="#fff" className="animate-spin-slower" />
       </div>
       <Container className="relative">
-        <div className="mx-auto max-w-md sm:text-center">
+        <div className="mx-auto mt-16 max-w-md sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
-            Get your first tips today
+            Improve your <span className="text-aanred">marketing</span> strategy today!
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            It takes 30 seconds to sign up. Download the app and create an
-            account today and we’ll send you a tip guaranteed to double your
-            first investment.
+            Signing up is easy. Select one of the plans below to start connecting with brand ambassadors, and see just how easy it is to improve your customer interactions.
           </p>
           <div className="mt-8 flex justify-center">
-            <AppStoreLink color="white" />
+            <Button
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >
+              {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
+              <span className="">Start now</span>
+            </Button>
           </div>
         </div>
       </Container>

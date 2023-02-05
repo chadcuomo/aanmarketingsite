@@ -47,8 +47,8 @@ function BackgroundIllustration(props) {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#ff5050" />
-            <stop offset="1" stopColor="#ff5050" stopOpacity="0" />
+            <stop stopColor="#ff6600" />
+            <stop offset="1" stopColor="#ff6600" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -77,8 +77,8 @@ function BackgroundIllustration(props) {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#ff5050" />
-            <stop offset="1" stopColor="#ff5050" stopOpacity="0" />
+            <stop stopColor="#ff6600" />
+            <stop offset="1" stopColor="#ff6600" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -265,35 +265,34 @@ function AppDemo() {
   )
 }
 
-export function Hero() {
+export function Hero2() {
   return (
-    <div className="overflow-hidden py-20 bg-neutral-900 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="overflow-hidden py-20 bg-neutral-900 sm:py-32 lg:pb-36 xl:pb-52">
       <Container>
-        <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
-          <div className="relative z-10 mx-auto max-w-2xl  pr-2 lg:col-span-7 lg:max-w-none lg:pt-36 xl:col-span-6">
-            <h1 className="text-7xl font-extrabold tracking-tight text-white">
-              A <span className='text-aanred'>Better</span> Way To Advertise
+        <div className="text-center">
+          <div className="w-full lg:pt-36 flex flex-wrap justify-center">
+            <h1 className="text-8xl font-extrabold tracking-tight text-white">
+              Say <span className='text-aanred'>goodbye</span> to overpirced influncer marketing
             </h1>
-            <p className='mt-14 text-xl text-white font-bold'>Let us help you filter through the noise. </p>
-            <p className="mt-4 text-lg text-gray-300">
-            The most effective method of advertising is no longer casting a large net over the entire ocean and hoping for the. By pairing with micro and nano-ambassadors you are now able to cast a lot of small nets in the exact places your audience goes to hang out - getting you more brand recognition while saving you time and money in the process.
+            <p className="mt-14 text-lg w-3/4 text-gray-300">
+            Discover how  brands are utilizing AAN's creator marketplace to reach their target audience more effectively, maximize their revenue and increase their engagement online.
             </p>
-            {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-              <AppStoreLink />
+            <div className="mt-14 flex  w-full flex-wrap justify-center gap-x-6 gap-y-4">
+              {/* <AppStoreLink /> */}
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               >
-                <PlayIcon className="h-6 w-6 flex-none" />
+                {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
                 <span className="">Start now</span>
               </Button>
-            </div> */}
+            </div>
           </div>
-          <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+          {/* <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
             <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
               <img src="heroimg.jpeg" alt="hero"  className='rounded-full'/>
             </div>
-          </div>
+          </div> */}
           {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
             <p className="text-center text-sm font-semibold text-white lg:text-left">
               As featured in
