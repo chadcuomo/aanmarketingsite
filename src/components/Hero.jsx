@@ -276,7 +276,7 @@ export function Hero() {
             </h1>
             <p className='mt-14 text-xl text-white font-bold'>Let us help you filter through the noise. </p>
             <p className="mt-4 text-lg text-gray-300">
-            The most effective method of advertising is no longer casting a large net over the entire ocean and hoping for the. By pairing with micro and nano-ambassadors you are now able to cast a lot of small nets in the exact places your audience goes to hang out - getting you more brand recognition while saving you time and money in the process.
+            The most effective method of advertising is no longer casting a large net over the entire ocean and hoping for the best. By pairing with micro and nano-ambassadors you are now able to cast a lot of small nets in the exact places your audience goes to hang out - getting you more brand recognition while saving you time and money in the process.
             </p>
             {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
