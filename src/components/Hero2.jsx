@@ -271,7 +271,7 @@ export function Hero2() {
       <Container>
         <div className="text-center">
           <div className="w-full lg:pt-36 flex flex-wrap justify-center">
-            <h1 className="text-8xl font-extrabold tracking-tight text-white">
+            <h1 className="text-7xl font-extrabold tracking-tight text-white md:text-8xl">
               Say <span className='text-aanred'>goodbye</span> to overpirced influncer marketing
             </h1>
             <p className="mt-14 text-lg w-3/4 text-gray-300">

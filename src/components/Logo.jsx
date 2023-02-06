@@ -16,6 +16,12 @@ export function Logo(props) {
   )
 }
 
+export function LogoBlack(props) {
+  return (
+    <img src='logo-black.png' alt="logo" className="w-24" />
+  )
+}
+
 export function LogoFull(props) {
   return (
     <img src='logo-full.png' alt="logo-full" className="w-60" />
