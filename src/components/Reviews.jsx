@@ -265,7 +265,7 @@ export function Reviews() {
           Everyone is <span className="text-aanred">raving</span> about AAN.
         </h2>
         <p className="mt-7 text-lg text-gray-300 sm:text-center">
-          See why brands are in love with are ambassador marketplace
+          See why brands are in love with our ambassador marketplace
         </p>
         <ReviewGrid />
       </Container>
