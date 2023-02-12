@@ -211,10 +211,10 @@ export function PricingTemp({ setOpen }) {
        const res = await fetch('../api/subscribe', { method: 'POST', body: JSON.stringify({ email: emailInput }) });
        const data = await res.json();
 
-       setOpen(true)
+       
 
        if (data.success) {
-        alert('it works')
+        setOpen(true)
        } else {
           throw new Error(data?.error || 'Something went wrong, please try again later');
        }
