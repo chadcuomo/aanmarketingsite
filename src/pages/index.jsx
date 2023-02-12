@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head'
 
 import { CallToAction } from '@/components/CallToAction'
@@ -10,15 +11,18 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Reviews } from '@/components/Reviews'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { PricingTemp } from '@/components/PricingTemp'
+import ThankYouModal from '@/components/ThankYouModal'
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false)
   return (
     <>
       <Head>
         <title>AAN - All Ambassador Network</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="Discover how  brands are utilizing AAN’s creator marketplace to reach their target audience more effectively, maximize their revenue and increase their engagement online."
         />
       </Head>
       <Header />
@@ -28,10 +32,11 @@ export default function Home() {
         <SecondaryFeatures />
         <CallToAction />
         <Reviews />
-        <Pricing />
+        <PricingTemp setOpen={setModalOpen} />
         <Faqs />
       </main>
       <Footer />
+      <ThankYouModal open={modalOpen} setOpen={setModalOpen} />
     </>
   )
 }

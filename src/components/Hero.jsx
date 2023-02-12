@@ -267,7 +267,7 @@ function AppDemo() {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden py-20 bg-neutral-900 sm:py-32 lg:pb-32 xl:pb-36">
+    <div id="about" className="overflow-hidden py-20 bg-neutral-900 sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl  pr-2 lg:col-span-7 lg:max-w-none lg:pt-36 xl:col-span-6">

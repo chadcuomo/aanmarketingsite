@@ -98,14 +98,14 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-900 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="#features">
-                              Features
+                            <MobileNavLink href="#about">
+                              About
                             </MobileNavLink>
                             <MobileNavLink href="#reviews">
                               Reviews
                             </MobileNavLink>
                             <MobileNavLink href="#pricing">
-                              Pricing
+                              Early Access
                             </MobileNavLink>
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
@@ -113,7 +113,7 @@ export function Header() {
                             <Button href="/login" variant="outline">
                               Log in
                             </Button>
-                            <Button href="#">Sign Up</Button>
+                            <Button href="#pricing">Get early access</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -125,8 +125,8 @@ export function Header() {
             <Button href="/login" variant="outline" className="hidden lg:block">
               Log in
             </Button>
-            <Button href="#" className="hidden lg:block">
-              Sign up
+            <Button href="#pricing" className="hidden lg:block">
+              Get early access
             </Button>
           </div>
         </Container>

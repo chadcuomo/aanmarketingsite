@@ -18,7 +18,7 @@ export function CallToAction() {
             Improve your <span className="text-aanred">marketing</span> strategy today!
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Signing up is easy. Select one of the plans below to start connecting with brand ambassadors, and see just how easy it is to improve your customer interactions.
+            Signing up is easy. Enter your email below to get early access to our creator marketplace, and see just how easy it is to improve your customer interactions.
           </p>
           <div className="mt-8 flex justify-center">
             <Button
