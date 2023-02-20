@@ -272,7 +272,7 @@ export function Hero2() {
         <div className="text-center">
           <div className="w-full lg:pt-36 flex flex-wrap justify-center">
             <h1 className="text-7xl font-extrabold tracking-tight text-white md:text-8xl">
-              Say <span className='text-aanred'>goodbye</span> to overpirced influncer marketing
+              Say <span className='text-aanred'>goodbye</span> to overpriced influncer marketing
             </h1>
             <p className="mt-14 text-lg w-3/4 text-gray-300">
             Discover how  brands are utilizing AAN’s creator marketplace to reach their target audience more effectively, maximize their revenue and increase their engagement online.
