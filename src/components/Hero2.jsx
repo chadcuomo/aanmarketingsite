@@ -280,7 +280,7 @@ export function Hero2() {
             <div className="mt-14 flex  w-full flex-wrap justify-center gap-x-6 gap-y-4">
               {/* <AppStoreLink /> */}
               <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="#pricing"
               >
                 {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
                 <span className="">Start now</span>

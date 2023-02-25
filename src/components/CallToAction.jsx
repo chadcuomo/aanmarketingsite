@@ -22,7 +22,7 @@ export function CallToAction() {
           </p>
           <div className="mt-8 flex justify-center">
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="#pricing"
             >
               {/* <PlayIcon className="h-6 w-6 flex-none" /> */}
               <span className="">Start now</span>
