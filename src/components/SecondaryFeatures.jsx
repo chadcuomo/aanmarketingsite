@@ -21,15 +21,15 @@ const features = [
     icon: DeviceClockIcon,
   },
   {
-    name: 'Verified Ambassdors',
+    name: 'Verified Ambassadors',
     description:
-      'All Ambassador profiles are verified, and we ensure ambassdors understand and practice brand safety.',
+      'All Ambassador profiles are verified, and we ensure ambassadors understand and practice brand safety.',
     icon: DeviceListIcon,
   },
   {
     name: 'Incentivized Reward Programs',
     description:
-      'For select brands, we provide additional incentives and rewards to ambassadors to promote and engage with those brands',
+      'For select brands, we provide additional incentives and rewards to ambassadors to promote and engage with those brands.',
     icon: DeviceLockIcon,
   },
   {

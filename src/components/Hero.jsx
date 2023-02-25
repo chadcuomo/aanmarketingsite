@@ -272,11 +272,12 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl  pr-2 lg:col-span-7 lg:max-w-none lg:pt-36 xl:col-span-6">
             <h1 className="text-7xl font-extrabold tracking-tight text-white">
-              A <span className='text-aanred'>Better</span> Way To Advertise
+              A <span className='text-aanred'>better</span> way to advertise.
             </h1>
             <p className='mt-14 text-xl text-white font-bold'>Let us help you filter through the noise. </p>
             <p className="mt-4 text-lg text-gray-300">
-            The most effective method of advertising is no longer casting a large net over the entire ocean and hoping for the best. By pairing with micro and nano-ambassadors you are now able to cast a lot of small nets in the exact places your audience goes to hang out - getting you more brand recognition while saving you time and money in the process.
+              The most effective advertising method is no longer casting a large net over the entire ocean and hoping for the best. By pairing with micro and nano-ambassadors, 
+              you can now cast a lot of small nets in the places your audience goes to hang out - getting you more brand recognition while saving you time and money.
             </p>
             {/* <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />

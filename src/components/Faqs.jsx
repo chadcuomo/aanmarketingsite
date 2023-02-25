@@ -14,7 +14,7 @@ const faqs = [
     {
       question: 'Is this free?',
       answer:
-        'AAN is 100% free for Ambassadors. For Businesses and Brands we will have plans that will fit the needs of most',
+        'AAN is 100% free for Ambassadors. For Businesses and Brands, we will have plans that will fit the needs of most',
     },
   ],
   [
@@ -42,7 +42,7 @@ export function Faqs() {
               href="mailto:info@example.com"
               className="text-aanred"
             >
-              reach out to us
+              contact us
             </Link>
             .
           </p>

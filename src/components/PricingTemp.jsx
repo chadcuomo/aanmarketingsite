@@ -242,8 +242,7 @@ export function PricingTemp({ setOpen }) {
             Getting started is <span className="text-aanred">easy</span>.
           </h2>
           <p className="mt-10 text-lg text-gray-300">
-            Whether you’re small businees trying to find your audience or a large brand trying
-            to increase your reach and engagement, we’ve got a personalized plan for you
+            Whether you’re a small business trying to find your audience or a large brand trying to increase your reach and engagement, we’ve got a personalized plan for you
           </p>
         </div>
         <p className="mt-10 text-sm text-gray-300 text-center">
